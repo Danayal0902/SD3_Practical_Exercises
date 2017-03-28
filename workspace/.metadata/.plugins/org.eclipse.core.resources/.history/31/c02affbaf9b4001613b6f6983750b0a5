@@ -1,0 +1,21 @@
+
+public class MasterShip extends Ship {
+	
+	public MasterShip() {
+		setType(new Master());
+		
+		setMode(new Defensive());
+	}
+	
+	@Override
+	public void newMove() {
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

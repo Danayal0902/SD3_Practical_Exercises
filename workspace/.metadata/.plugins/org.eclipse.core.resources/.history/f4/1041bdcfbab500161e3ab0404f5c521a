@@ -1,0 +1,60 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+
+public class GameScreen extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		(new Thread(new GameRunnable())).start();
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					GameScreen frame = new GameScreen();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public GameScreen() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(6, 6, 309, 225);
+		contentPane.add(panel);
+		
+		JButton btnMakeMove = new JButton("Make Move");
+		btnMakeMove.setBounds(327, 168, 117, 29);
+		contentPane.add(btnMakeMove);
+		
+		JButton btnUndoMove = new JButton("Undo Move");
+		btnUndoMove.setBounds(327, 202, 117, 29);
+		contentPane.add(btnUndoMove);
+		
+		JButton btnExit = new JButton("Exit");
+		btnExit.setBounds(6, 243, 117, 29);
+		contentPane.add(btnExit);
+	}
+}

@@ -1,0 +1,10 @@
+
+public class Offensive implements Mode {
+
+	@Override
+	public String BattleMode() {
+		// TODO Auto-generated method stub
+		return "Go Offensive";
+	}
+
+}

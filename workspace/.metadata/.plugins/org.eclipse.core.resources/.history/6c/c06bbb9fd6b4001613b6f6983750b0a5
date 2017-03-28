@@ -1,0 +1,11 @@
+
+public class CreateShip {
+	
+	public Ship spawnShip(int random) {
+		
+		
+		return null;
+		
+	}
+
+}

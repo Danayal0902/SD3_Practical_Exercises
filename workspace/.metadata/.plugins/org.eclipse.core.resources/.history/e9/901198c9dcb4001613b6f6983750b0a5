@@ -1,0 +1,46 @@
+
+public abstract class Ship {
+	
+	private Type type;
+	private Mode battleMode;
+	private int position1;
+	private int position2;
+	
+	public abstract void newMove();
+	public abstract void undoMove();
+	
+	
+	public void setType(Type type) {
+		this.type = type;
+	}
+	
+	public Type getType() {
+		return type;
+	}
+	
+	public void setMode(Mode battleMode) {
+		this.battleMode = battleMode;
+	}
+	
+	public Mode getMode() {
+		return battleMode;
+	}
+	
+	public String ShipType() {
+		return this.type.ShipType();
+	}
+	
+	public String BattleMode() {
+		return this.battleMode.BattleMode();
+	}
+	
+	public void setPosition(int position1, int position2) {
+		this.position1 = position1;
+		this.position2 = position2;
+	}
+	
+	public int getPosition() {
+		return position1 & position2;
+	}
+
+}

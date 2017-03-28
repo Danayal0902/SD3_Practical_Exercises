@@ -1,0 +1,16 @@
+
+public class Test {
+
+	private static String fileName;
+
+	public static void main(String[] args) {
+		Message m = new Message();
+		
+		m.JSONMessage(fileName);
+		
+		System.out.println("JSONED M9");
+	}
+
+	
+
+}

@@ -1,0 +1,17 @@
+
+public class Test {
+
+	public static void main(String[] args, String fileName) {
+		Message m = new Message();
+		
+		m.JSONMessage(fileName);
+		
+		System.out.println("JSONED M9");
+	}
+
+	private static void JSONMessage() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

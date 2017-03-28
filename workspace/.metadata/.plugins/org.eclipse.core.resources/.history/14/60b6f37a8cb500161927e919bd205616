@@ -1,0 +1,27 @@
+
+public class CreateShip {
+	
+	//method that will spawn an enemy ship based on a random number
+	public Ship spawnShip(int counter) {
+		
+		Ship type = null;
+		
+		if(counter == 0) {
+			System.out.println("Spawning BattleShooter...");
+			type = new BattleShooter();
+		}
+		
+		if(counter == 1) {
+			System.out.println("Spawning BattleStar...");
+			type = new BattleStar();
+		}
+		
+		if(counter == 2) {
+			System.out.println("Spawning BattleCruiser...");
+			type = new BattleCruiser();
+		}
+		return type;
+		
+	}
+
+}

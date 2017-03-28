@@ -1,0 +1,51 @@
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+
+public abstract class Ship {
+	
+	private Type type;
+	private Mode battleMode;
+	private Point2D position;
+	
+	public ArrayList<Point2D> listMoves = new ArrayList<Point2D>();
+	
+	public abstract void newMove();
+	public abstract void undoMove();
+	
+	public void setType(Type type) {
+		this.type = type;
+	}
+	
+	public Type getType() {
+		return type;
+	}
+	
+	public void setMode(Mode battleMode) {
+		this.battleMode = battleMode;
+	}
+	
+	public Mode getMode() {
+		return battleMode;
+	}
+	
+	public String ShipType() {
+		return this.type.ShipType();
+	}
+	
+	public String BattleMode() {
+		return this.battleMode.BattleMode();
+	}
+	
+	
+	
+	public void setPosition(Point2D position) {
+		this.position = position;
+		
+		
+	}
+	
+	public Point2D getPosition() {
+		return position;
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Defensive implements Mode {
+
+	@Override
+	public String BattleMode() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

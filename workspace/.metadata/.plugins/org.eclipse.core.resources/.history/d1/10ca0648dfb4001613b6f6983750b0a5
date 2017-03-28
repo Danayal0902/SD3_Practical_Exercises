@@ -1,0 +1,23 @@
+import java.awt.geom.Point2D;
+
+public class BattleShooter extends Ship{
+	
+	public BattleShooter() {
+		setType(new Shooter());
+		setMode(new Defensive());
+		setPosition(new Point2D.Double(0,4));
+	}
+
+	@Override
+	public void newMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

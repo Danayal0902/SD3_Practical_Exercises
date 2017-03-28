@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Message m = new Message();
+		
+		JSONMessage();
+	}
+
+	private static void JSONMessage() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

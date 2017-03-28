@@ -1,0 +1,18 @@
+
+public class MoveSet {
+	
+	public int newPosition() {
+		return 0;
+		
+	}
+	
+	public void newMove(Ship s) {
+		
+	}
+	
+	
+	public void undoMove(Ship s) {
+		
+	}
+
+}

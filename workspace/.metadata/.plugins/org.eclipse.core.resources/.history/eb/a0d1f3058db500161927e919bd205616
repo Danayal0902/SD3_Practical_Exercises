@@ -1,0 +1,26 @@
+
+public class CreateShip { //factory pattern to generate ships from concrete class
+	
+	//method that will spawn an enemy ship based on a random number
+	public Ship spawnShip(int counter) {
+		
+		
+		if(counter == 0) {
+			System.out.println("Spawning BattleShooter...");
+			return new BattleShooter();
+		}
+		
+		if(counter == 1) {
+			System.out.println("Spawning BattleStar...");
+			return new BattleStar();
+		}
+		
+		if(counter == 2) {
+			System.out.println("Spawning BattleCruiser...");
+			return new BattleCruiser();
+		}
+		return null;
+		
+	}
+
+}

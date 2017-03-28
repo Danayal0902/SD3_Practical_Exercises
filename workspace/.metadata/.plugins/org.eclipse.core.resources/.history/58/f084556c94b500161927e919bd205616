@@ -1,0 +1,22 @@
+
+public class MasterShip extends Ship {
+	
+	//set ship type and spawn in defensive mode
+	public MasterShip() {
+		setType(new Master());
+		
+		setMode(new Defensive());
+	}
+	
+	@Override
+	public void newMove() {
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

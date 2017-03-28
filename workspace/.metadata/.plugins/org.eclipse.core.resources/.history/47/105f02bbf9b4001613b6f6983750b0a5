@@ -1,0 +1,10 @@
+
+public class Shooter implements Type {
+
+	@Override
+	public String ShipType() {
+		// TODO Auto-generated method stub
+		return "Enemy: BattleShooter";
+	}
+
+}

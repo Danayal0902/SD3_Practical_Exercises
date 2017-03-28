@@ -1,0 +1,17 @@
+
+public class FactoryPatternDemo {
+	
+	public static void main(String[] args) {
+		CreateShip createShip = new CreateShip();
+		
+		//get ship object and call its draw method
+		Ship shooter = CreateShip.spawnShip(0);
+		shooter.draw();
+		
+		Ship star = CreateShip.spawnShip(1);
+		star.draw();
+		
+		Ship cruiser = CreateShip.spawnShip(2);
+		cruiser.draw();
+	}
+}

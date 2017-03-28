@@ -1,0 +1,26 @@
+import java.awt.geom.Point2D;
+
+public class BattleCruiser extends Ship {
+	
+	//method that inherits functions from super class
+	public BattleCruiser() {
+		setType(new Cruiser());
+		setMode(new Defensive());
+		
+		//set spawn position
+		setPosition(new Point2D.Double(0, 3));
+	}
+
+	@Override
+	public void newMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class BattleCruiser extends Ship {
+	
+	public BattleCruiser() {
+		setMode(new Defensive());
+		setType(new Cruiser());
+	}
+
+	@Override
+	public void newMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

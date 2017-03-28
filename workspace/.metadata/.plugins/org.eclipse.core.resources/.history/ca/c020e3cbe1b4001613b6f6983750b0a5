@@ -1,0 +1,21 @@
+
+public class BattleStar extends Ship {
+	
+	public BattleStar() {
+		setType(new Star());
+		setMode(new Defensive());
+	}
+
+	@Override
+	public void newMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void undoMove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

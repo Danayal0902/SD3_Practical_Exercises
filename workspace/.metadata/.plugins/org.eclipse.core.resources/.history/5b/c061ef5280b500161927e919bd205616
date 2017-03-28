@@ -1,0 +1,8 @@
+
+public interface Thread {
+	
+	public static void run() {
+		
+	}
+
+}
